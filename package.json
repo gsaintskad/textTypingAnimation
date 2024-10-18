@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite && tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "vite",
+    "twd": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
