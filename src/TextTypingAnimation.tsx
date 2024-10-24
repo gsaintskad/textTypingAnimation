@@ -17,10 +17,10 @@ const randomTimeGap = (): number => {
 const TextTypingAnimation = (props: TextTypingAnimationProps) => {
   const children = props.children;
   const [actualText, setActualText] = useState("");
-  let i = 0;
+
   const splittedText = props.children!.split("");
   useEffect(() => {
-    i=0;
+    let i = 0;
     // Reset actualText when the children (the text to animate) changes
     setActualText("");
 
